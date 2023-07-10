@@ -1,0 +1,53 @@
+
+.header {
+  display: flex;
+  width: 10%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.text {
+  font-family: "Open sans", sans-serif;
+  font-size: 18px;
+}
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.aboutMeSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* align-items:center; */
+  height: 200px;
+  padding: 50px 10px;
+}
+.button {
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 20px;
+  border-radius: 31px;
+
+  font-family: "Open sans", sans-serif;
+  font-size: 21px;
+  font-weight: "600px";
+
+  position: fixed;
+  bottom: 10px;
+  width: calc(100% - 60px);
+  cursor: pointer;
+}
+.bloodGroupSection {
+  padding: 70px 0px;
+}
+.fileUploadSection {
+  border: 1px solid lightgrey;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

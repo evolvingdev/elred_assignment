@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  width: 10%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.text {
+  font-family: "Open sans", sans-serif;
+  font-size: 18px;
+}
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.aboutmeContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.resume {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.resumeText {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 25%;
+  padding: 0 20px;
+}
+.seeResume {
+  padding: 0 20px;
+  cursor: pointer;
+}
