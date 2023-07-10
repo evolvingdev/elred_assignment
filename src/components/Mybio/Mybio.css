@@ -1,3 +1,10 @@
+.parent {
+  display: flex;
+  width: 375px;
+  flex-direction: column;
+  height: 812px;
+  z-index: 0;
+}
 .header {
   display: flex;
   width: 10%;
@@ -24,7 +31,7 @@
   align-items: center;
   justify-content: space-between;
   height: 70px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
 }
 .resumeText {
   display: flex;
@@ -36,4 +43,76 @@
 .seeResume {
   padding: 0 20px;
   cursor: pointer;
+}
+.skillsContainer {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: space-around; */
+  height: 170px;
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+  padding: 0 20px;
+  margin: 50px 0;
+  height: auto;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 700px;
+  padding: 10px 0;
+  overflow: scroll;
+}
+.skills::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.skills {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.ratings {
+  background-color: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 270px;
+}
+.ratingsCard {
+  border-radius: 12px;
+  background-color: darkgray;
+  height: 200px;
+  width: 95%;
+  padding: 10px 20px;
+  color: white;
+}
+.line {
+  color: lightgray;
+  width: 100%;
+  border-top: 1px solid;
+}
+.ecoc {
+  margin: 20px;
+}
+.profileContainer {
+  display: flex;
+  width: 45%;
+  justify-content: space-evenly;
+  margin: 5% 0;
+  align-items: center;
+}
+.profile img {
+  border-radius: 20rem;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 5%;
+}
+.role {
+  max-width: 50px;
 }

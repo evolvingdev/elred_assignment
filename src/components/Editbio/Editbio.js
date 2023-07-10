@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import "./Editbio.css";
 import TextField from "@mui/material/TextField";
@@ -9,22 +9,16 @@ import Select from "@mui/material/Select";
 import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
 function Editbio() {
+  let details = JSON.parse(localStorage.getItem("data"));
+
   const [data, setData] = useState({
-    about: "",
-    bloodGroup: "",
+    about: details.about,
+    bloodGroup: details.bloodGroup,
   });
 
   const handleChange = (event) => {
     setData({ ...data, bloodGroup: event.target.value });
   };
-  let details = JSON.parse(localStorage.getItem("data"));
-
-  useEffect(() => {
-    setData({
-      about: details.about,
-      bloodGroup: details.bloodGroup,
-    });
-  }, [details.about, details.bloodGroup]);
 
   return (
     <div className="parent">

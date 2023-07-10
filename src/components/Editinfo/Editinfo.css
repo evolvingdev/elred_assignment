@@ -56,3 +56,28 @@
   justify-content: center;
   align-items: center;
 }
+.chipContainer{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    justify-content: space-around;
+}
+.chipInput {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  border: 1px solid lightgrey;
+  border-radius: 8px;
+  width: 400px;
+  overflow-x: scroll;
+}
+
+.chipInput::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.chipInput {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}

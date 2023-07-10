@@ -6,6 +6,10 @@ body {
   font-size: 18px;
   padding: 70px 50px;
 
+  display: flex;
+  align-content: center;
+  justify-content: center;
+
 }
 
 code {
