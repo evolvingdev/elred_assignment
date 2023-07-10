@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
-import ModeEditIcon from "@mui/icons-material/ModeEdit";
 import "./Editbio.css";
 import TextField from "@mui/material/TextField";
 import InputLabel from "@mui/material/InputLabel";
@@ -8,12 +7,7 @@ import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import Button from "@mui/material/Button";
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Route,
-  Link,
-} from "react-router-dom";
+import { Link } from "react-router-dom";
 function Editbio() {
   const [data, setData] = useState({
     about: "",
@@ -30,7 +24,7 @@ function Editbio() {
       about: details.about,
       bloodGroup: details.bloodGroup,
     });
-  }, []);
+  }, [details.about, details.bloodGroup]);
 
   return (
     <div className="parent">

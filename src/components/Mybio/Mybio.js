@@ -5,16 +5,11 @@ import "./Mybio.css";
 import TextField from "@mui/material/TextField";
 import FindInPageIcon from "@mui/icons-material/FindInPage";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import { createBrowserHistory } from "history";
 import {
-  createBrowserRouter,
-  RouterProvider,
-  Route,
   Link,
 } from "react-router-dom";
 
 function Mybio() {
-  let history = createBrowserHistory();
   let about = JSON.parse(localStorage.getItem("data"));
   return (
     <div className="parent">
